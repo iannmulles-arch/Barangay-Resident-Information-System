@@ -23,7 +23,6 @@ start_page('Households');
     <div class="wrap">
         <h1>Household Records</h1>
         <p class="muted">Household records and their registered residents.</p>
-        <p><a class="btn primary" href="household_form.php">+ Add Household</a></p>
     </div>
 </div>
 
@@ -47,7 +46,7 @@ start_page('Households');
                     <?php if (empty($households)): ?>
                         <tr>
                             <td colspan="4">
-                                No households found yet. Click “Add Household” to register the first household.
+                                No households found. Import the SQL file to load sample records.
                             </td>
                         </tr>
                     <?php else: ?>
@@ -64,6 +63,9 @@ start_page('Households');
             </table>
         </div>
 
+        <p class="muted">
+            In this starter version, household records can be managed through phpMyAdmin.
+        </p>
     </div>
 </main>
 

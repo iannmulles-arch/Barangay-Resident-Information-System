@@ -13,8 +13,7 @@ FEATURES INCLUDED
 - Responsive BRIS landing page
 - Resident registration and editing
 - Resident search and status filter
-- Add household form and household summary
-- Assign residents to existing households from the resident form
+- Household assignment and household summary
 - Printable resident report
 - PDO prepared statements for database queries
 - Session-based login/logout with staff and user roles
@@ -37,8 +36,6 @@ BRIS/
   user_dashboard.php        User account and linked profile view
   accounts.php              Staff-only account creation and listing
   households.php            Household list and member counts
-  household_form.php        Add household form
-  household_save.php        Validate and save household information
   reports.php               Printable resident report
   config/
     database.php            PDO database connection
@@ -89,8 +86,3 @@ IMPORTANT LIMITATIONS
 - Authentication and basic role permissions are included, but the project still lacks a full audit log and production-grade privacy/security review. Do not put real residents' personal data into a public deployment.
 - The sample residents and households are fictional.
 - Make a database backup before testing destructive changes.
-
-PROJECT ORGANIZATION
-- See docs/PROJECT_STRUCTURE.md for a map of the folders, each PHP page, and the resident registration flow.
-- Additional notes are stored in the docs/ folder.
-- The active PHP site uses assets/style.css; the old static Index.html/styles.css pair has been removed from this cleaned copy.
